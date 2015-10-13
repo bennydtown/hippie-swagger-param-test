@@ -1,0 +1,11 @@
+node_modules
+.env*
+.migrate
+.DS_Store
+npm-debug.log
+dump.rdb
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

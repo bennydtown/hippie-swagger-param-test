@@ -1,0 +1,35 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Testing problems with path parameters in Hippie",
+    "version": "",
+    "description": "Testing problems with path parameters in Hippie"
+  },
+  "paths": {
+    "/": {
+      "post": {
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "summary": "Example Endpoint",
+        "description": "Example Endpoint",
+        "parameters": [
+          {
+            "$ref": "#/parameters/DummyParameter"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "DummyParameter": {
+      "name": "dummy",
+      "in": "formData",
+      "type": "string",
+      "description": "A parameter",
+      "required": true
+    }
+  }
+}

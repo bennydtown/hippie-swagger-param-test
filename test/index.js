@@ -8,8 +8,8 @@ function testEndpoint (app, apiDefinition, done) {
   hippie(app, swagger, { errorOnExtraParameters: false })
     .post('/')
     .send({dummy: "foo"})
+    .form()
     .header('User-Agent', 'hippie')
-    .header('Content-Type', 'application/json')
     .expectStatus(200)
     .end(done)
 }
